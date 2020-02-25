@@ -5,51 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>13</title>
+  <link href="https://fonts.googleapis.com/css?family=Damion|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <img class="header__logo" src="images/logo.png" alt="page logo">
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="" class="header__link">HOME</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link">ABOUT</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link">NEW HERE?</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link">BLOG</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link">SERVICES</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link">PORTFOLIO</a>
-        </li>
-        <li class="header__item">
-          <a href="" class="header__link">WORK WITH US</a>
-        </li>
-      </ul>
-      <button class="hmb-btn">
-        <span class="hmb-btn__outer">
-          <span class="hmb-btn__inner"></span>
-        </span>
-      </button>
-    </nav>
-
-    <div>
-      <h1>HOW CAN WE BUILD
-        AN AMAZING SITE</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the.</p>
-      <a href="http://" target="_blank" rel="noopener noreferrer">View Portfolio</a>
+    <div id="header-cnt" class="header__nav-cnt">
+      <img class="header__logo" src="images/logo.png" alt="page logo">
+      <nav class="header__nav">
+        <ul id="header-menu" class="header__list">
+          <li class="header__item">
+            <a href="" class="header__link">HOME</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">ABOUT</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">NEW HERE?</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">BLOG</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">SERVICES</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">PORTFOLIO</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">WORK WITH US</a>
+          </li>
+        </ul>
+        <button id="nav-btn" class="hmb-btn">
+          <span class="hmb-btn__outer">
+            <span class="hmb-btn__inner"></span>
+          </span>
+        </button>
+      </nav>
     </div>
 
-    <div><img src="" alt=""></div>
+    <div class="header__welcome-txt">
+      <div class="header__text">
+        <h1 class="header__title">
+          HOW CAN WE BUILD
+          <br>
+          <span class="header__subtitle">AN AMAZING SITE</span>
+        </h1>
+        <p class="header__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem
+          Ipsum has been the.</p>
+        <a class="header__btn" href="http://" target="_blank" rel="noopener noreferrer">View Portfolio</a>
+      </div>
+      <div class="header__image-cnt">
+        <img class="header__image" src="images/Layer2.png" alt="smiling woman">
+      </div>
+    </div>
   </header>
 
   <section class="section">
@@ -215,6 +225,7 @@
       <li><a href=""></a></li>
     </ul>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
