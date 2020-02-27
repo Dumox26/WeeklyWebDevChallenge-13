@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>13</title>
-  <link href="https://fonts.googleapis.com/css?family=Damion|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Damion&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -107,22 +107,21 @@
     </div>
   </section>
 
-  <section class="section-form ">
+  <section class="section-contact">
     <div class="grid">
-      <div class="">
-        <h2 class="">How can we build your online presence</h2>
-        <p class="">Lorem Ipsum is simply dummy text of the printing and
+      <div class="section-contact__text">
+        <h2 class="section-contact__title">How can we build your online presence</h2>
+        <p class="section-contact__p">Lorem Ipsum is simply dummy text of the printing and
           typeset.
           ting industry</p>
       </div>
-      <form action="">
-        <fieldset>
-          <label for=""></label>
-          <input type="text" name="" id="" placeholder="Enter your full name">
-          <label for=""></label>
-          <input type="text" name="" id="" placeholder="Enter your email adress">
-          <button type="submit">Get it Now!</button>
-        </fieldset>
+      <form class="section-contact__form">
+        <label class="section-contact__label" for="input-name"></label>
+        <input class="section-contact__input" type="text" id="input-name" required placeholder="Enter your full name">
+        <label class="section-contact__label" for="input-email"></label>
+        <input class="section-contact__input" type="email" id="input-email" required
+          placeholder="Enter your email adress">
+        <button type="submit" class="section-contact__btn">Get it Now!</button>
       </form>
     </div>
   </section>

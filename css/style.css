@@ -260,3 +260,58 @@ img {
 .section__link {
   color: #e46e48;
 }
+
+/* section-contact */
+
+.section-contact {
+  background-color: #9068be;
+  color: #ffff;
+  padding: 2em;
+}
+
+.section-contact__text,
+.section-contact__form {
+  grid-column: 1/9;
+}
+
+.section-contact__text {
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.section-contact__title {
+  margin-bottom: 1em;
+}
+
+.section-contact__form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.section-contact__label {
+  display: none;
+}
+
+.section-contact__input,
+.section-contact__btn {
+  border: none;
+  margin-bottom: 1em;
+  padding: 0.75em 0.5em;
+  font-size: 1.25em;
+}
+
+.section-contact__input {
+  color: #828282;
+}
+
+.section-contact__btn {
+  background-color: #e46e48;
+  color: #fff;
+}
+
+.section-contact__btn:focus {
+  outline: #000 solid;
+}
