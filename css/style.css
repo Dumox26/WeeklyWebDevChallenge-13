@@ -226,7 +226,7 @@ img {
   grid-column: 1/9;
 }
 
-.section__image {
+.section__image-woman {
   display: none;
 }
 
@@ -494,16 +494,39 @@ img {
   body {
     font-size: 18px;
   }
+
+  .section__image-woman {
+    display: block;
+    grid-column: 2/8;
+    margin: 1em 0;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 22px;
+    font-size: 20px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 22px;
+  .header__nav {
+    margin: 0 auto;
+  }
+
+  .header__list {
+    position: static;
+    transform: translateY(0) translateX(0);
+    transition: none;
+    width: auto;
+    font-size: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .header__item {
+    margin: 0 1em;
+  }
+
+  .hmb-btn {
+    display: none;
   }
 }
