@@ -400,6 +400,7 @@ img {
   box-shadow: 0 0 4px 0;
   font-style: italic;
   font-weight: 400;
+  color: #555;
   padding: 60px 1em 50px 1em;
   margin: -45px 0 -32.5px 0;
 }
@@ -418,3 +419,29 @@ img {
   color: #02c6d8;
   font-size: 1.25em;
 }
+
+/* section section-work */
+
+.section-work {
+  background-image: url(../images/sectionWork.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 2em;
+  color: #fff;
+}
+
+.section-work__text {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.section-work__link {
+  background-color: #e46e48;
+  font-size: 1.5em;
+  padding: 0.25em 0.5em;
+  color: #fff;
+  display: inline-block;
+}
+
