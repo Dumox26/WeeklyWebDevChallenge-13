@@ -445,3 +445,34 @@ img {
   display: inline-block;
 }
 
+/* footer */
+
+.footer {
+  background-color: #000;
+  text-align: center;
+  font-size: 1em;
+}
+
+.footer__list {
+  display: none;
+}
+
+.footer__img {
+  width: 20%;
+}
+
+.footer__socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__socials-list-link {
+  background-color: #cfcfcf;
+  color: #011e22;
+  width: 25px;
+  height: 25px;
+  font-size: 1em;
+  line-height: 25px;
+  margin: 2px;
+  display: inline-block;
+}
