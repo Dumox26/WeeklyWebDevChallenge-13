@@ -377,3 +377,44 @@ img {
 .offert-card__link--green {
   background-color: #326c73;
 }
+
+/* client-card */
+
+.client-card-cnt {
+  grid-column: 1/9;
+  text-align: center;
+  font-size: 1em;
+}
+
+.client-card-cnt__quote-cnt {
+  height: 70px;
+  width: 70px;
+  margin-left: 20px;
+}
+
+.client-card-cnt__quote-img {
+  vertical-align: middle;
+}
+
+.client-card-cnt__content {
+  box-shadow: 0 0 4px 0;
+  font-style: italic;
+  font-weight: 400;
+  padding: 60px 1em 50px 1em;
+  margin: -45px 0 -32.5px 0;
+}
+
+.client-card-cnt__client-image {
+  height: 65px;
+  width: 65px;
+}
+
+.client-card-cnt__client-name {
+  color: #9068be;
+  font-size: 1.5em;
+}
+
+.client-card-cnt__client-link {
+  color: #02c6d8;
+  font-size: 1.25em;
+}
