@@ -10,8 +10,8 @@ class Ui {
   }
 
   menuEvent = () => {
-    document.querySelector('#header-menu').classList.toggle('header__list--active');
-    document.querySelector('#header-cnt').classList.toggle('header__nav-cnt--menu-active');
+    document.querySelector('#header-menu').classList.toggle('header__navigation--active');
+    document.querySelector('#header-text').classList.toggle('header__welcome-txt--menu-active');
   }
 
 
@@ -23,12 +23,13 @@ class Ui {
 
   matchMedia = () => {
     const media = window.matchMedia('(min-width: 1000px)');
-    const headerMenu = document.querySelector('#header-menu');
+    const headerText = document.querySelector('#header-text');
+    const headerNav = document.querySelector('#header-menu');
+
     media.addEventListener('change', (event) => {
       if (event.matches) {
-        headerMenu.classList.toggle('header__list--desktop');
-      } else {
-        // headerMenu.classList.toggle('header__list--desktop');
+        headerText.classList.remove('header__welcome-txt--menu-active');
+        headerNav.classList.remove('header__navigation--active');
       }
     });
   }
