@@ -260,7 +260,7 @@ img {
 
 .section__describe {
   background-color: #f6f6f6;
-  padding: 2em;
+  padding: 1em;
   font-size: 0.75em;
   text-align: center;
 }
@@ -571,15 +571,16 @@ img {
   }
 
   .section__image-woman-cnt {
-    display: block;
-    grid-column: 1/5;
-    min-height: 400px;
+    grid-column: 1/9;
   }
 
   .section__describe {
-    grid-column: 5/9;
-    height: 80%;
-    align-self: center;
+    grid-column: 2/8;
+    padding: 2em;
+  }
+
+  .section__text {
+    margin-bottom: 2em;
   }
 
   .section__link {
@@ -589,7 +590,55 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+  }
+
+  .grid--nine_column {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .section__image-woman-cnt {
+    grid-column: 1/4;
+    min-height: 350px;
+  }
+
+  .section__describe {
+    height: 85%;
+    grid-column: 4/9;
+    align-self: center;
+    text-align: left;
+  }
+
+  .section-contact__text {
+    grid-column: 1/4;
+    margin-bottom: 0;
+  }
+
+  .section-contact__title {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+
+  .section-contact__p {
+    font-size: 0.75em;
+  }
+
+  .section-contact__form {
+    grid-column: 4/9;
+  }
+
+  .offert-card-cnt {
+    grid-column: span 4;
+    margin: 0 15px 0 15px;
+  }
+
+  .section__welcome-text--nine-column {
+    grid-column: 1/10;
+  }
+
+  .client-card-cnt {
+    grid-column: span 3;
+    margin: 0 10px 0 10px;
   }
 }
