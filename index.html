@@ -12,61 +12,63 @@
 
 <body>
   <header class="header">
-    <div class="header__nav-cnt">
-      <img class="header__logo" src="images/logo.png" alt="page logo">
-      <nav class="header__nav">
-        <div id="header-menu" class="header__navigation">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="" class="header__link">HOME</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">ABOUT</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">NEW HERE?</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">BLOG</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">SERVICES</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">PORTFOLIO</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">WORK WITH US</a>
-            </li>
-          </ul>
-        </div>
-        <button id="nav-btn" class="hmb-btn">
-          <span class="hmb-btn__outer">
-            <span class="hmb-btn__inner"></span>
-          </span>
-        </button>
-      </nav>
-    </div>
-
-    <div id="header-text" class="header__welcome-txt">
-      <div class="header__text">
-        <h1 class="header__title">
-          HOW CAN WE BUILD
-          <br>
-          <span class="header__subtitle">AN AMAZING SITE</span>
-        </h1>
-        <p class="header__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem
-          Ipsum has been the.</p>
-        <a class="header__btn" href="http://" target="_blank" rel="noopener noreferrer">View Portfolio</a>
+    <div class="container">
+      <div class="header__nav-cnt">
+        <img class="header__logo" src="images/logo.png" alt="page logo">
+        <nav class="header__nav">
+          <div id="header-menu" class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="" class="header__link">HOME</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">ABOUT</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">NEW HERE?</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">BLOG</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">SERVICES</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">PORTFOLIO</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">WORK WITH US</a>
+              </li>
+            </ul>
+          </div>
+          <button id="nav-btn" class="hmb-btn">
+            <span class="hmb-btn__outer">
+              <span class="hmb-btn__inner"></span>
+            </span>
+          </button>
+        </nav>
       </div>
-      <div class="header__image-cnt">
-        <img class="header__image" src="images/Layer2.png" alt="smiling woman">
+
+      <div id="header-text" class="header__welcome-txt">
+        <div class="header__text">
+          <h1 class="header__title">
+            HOW CAN WE BUILD
+            <br>
+            <span class="header__subtitle">AN AMAZING SITE</span>
+          </h1>
+          <p class="header__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem
+            Ipsum has been the.</p>
+          <a class="header__btn" href="http://" target="_blank" rel="noopener noreferrer">View Portfolio</a>
+        </div>
+        <div class="header__image-cnt">
+          <img class="header__image" src="images/welcome.png" alt="smiling woman">
+        </div>
       </div>
     </div>
   </header>
 
   <section class="section section--white-bg">
-    <div class="grid">
+    <div class="grid container">
       <div class="section__welcome-text">
         <h2 class="section__title">About BGStudio</h2>
         <p class="section__title-p">
@@ -82,8 +84,8 @@
           Aldus PageMaker including versions of Lorem Ipsum.
         </p>
       </div>
-      <div class="section__image-woman">
-        <img src="images/Layer4.png" alt="">
+      <div class="section__image-woman-cnt">
+        <img src="images/Layer4.png" alt="woman" class="section__image-woman-cnt">
       </div>
 
       <div class="section__describe">
@@ -130,7 +132,7 @@
   </section>
 
   <section class="section section--grey-bg">
-    <div class="grid">
+    <div class="grid container">
       <div class="section__welcome-text">
         <h2 class="section__title">What we do best</h2>
         <p class="section__title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -185,7 +187,7 @@
   </section>
 
   <section class="section">
-    <div class="grid">
+    <div class="grid container">
       <div class="section__welcome-text">
         <h2 class="section__title">What we do best</h2>
         <p class="section__title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -268,36 +270,41 @@
   </section>
 
   <section class="section-work">
-    <p class="section-work__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-      has been the industry's
-      standard
-      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-      specimen
-      book. It has survived not only five centuries.</p>
-    <a class="section-work__link" href="">Work With Us!</a>
+    <div class="container">
+      <p class="section-work__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum
+        has been the industry's
+        standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+        specimen
+        book. It has survived not only five centuries.</p>
+      <a class="section-work__link" href="">Work With Us!</a>
+    </div>
   </section>
 
   <footer class="footer">
-    <ul class="footer__list">
-      <li class="footer__list-item"><a href="">Home</a></li>
-      <li class="footer__list-item"><a href="">About</a></li>
-      <li class="footer__list-item"><a href="">New Here?</a></li>
-      <li class="footer__list-item"><a href="">Blog</a></li>
-      <li class="footer__list-item"><a href="">Shop</a></li>
-      <li class="footer__list-item"><a href="">Services</a></li>
-      <li class="footer__list-item"><a href="">Wotk With Us</a></li>
-      <li class="footer__list-item"><a href="">Contact</a></li>
-    </ul>
-    <img src="images/logo2.png" alt="logo" class="footer__img">
-    <ul class="footer__socials-list">
-      <li class="footer__socials-list-item"><a class="footer__socials-list-link" href="facebook.com" target="_blank"><i
-            class="fab fa-facebook-f"></i></a></li>
-      <li class="footer__socials-list-item"><a class="footer__socials-list-link" target="_blank" href="twitter.com"><i
-            class="fab fa-twitter"></i></a>
-      </li>
-      <li class="footer__socials-list-item"><a class="footer__socials-list-link" target="_blank" href="linkedin.com"><i
-            class="fab fa-linkedin-in"></i></a></li>
-    </ul>
+    <div class="containter">
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="">Home</a></li>
+        <li class="footer__list-item"><a href="">About</a></li>
+        <li class="footer__list-item"><a href="">New Here?</a></li>
+        <li class="footer__list-item"><a href="">Blog</a></li>
+        <li class="footer__list-item"><a href="">Shop</a></li>
+        <li class="footer__list-item"><a href="">Services</a></li>
+        <li class="footer__list-item"><a href="">Wotk With Us</a></li>
+        <li class="footer__list-item"><a href="">Contact</a></li>
+      </ul>
+      <img src="images/logo2.png" alt="logo" class="footer__img">
+      <ul class="footer__socials-list">
+        <li class="footer__socials-list-item"><a class="footer__socials-list-link" href="facebook.com"
+            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="footer__socials-list-item"><a class="footer__socials-list-link" target="_blank" href="twitter.com"><i
+              class="fab fa-twitter"></i></a>
+        </li>
+        <li class="footer__socials-list-item"><a class="footer__socials-list-link" target="_blank"
+            href="linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>
