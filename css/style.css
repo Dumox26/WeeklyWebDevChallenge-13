@@ -549,6 +549,7 @@ img {
   .header__text {
     grid-column: 1/4;
     padding-top: 2em;
+    text-align: left;
   }
 
   .header__title {
