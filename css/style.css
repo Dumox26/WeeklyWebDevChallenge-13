@@ -464,7 +464,8 @@ img {
 
 .footer__list {
   display: none;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  margin: 1em 0;
 }
 
 .footer__list-item {
