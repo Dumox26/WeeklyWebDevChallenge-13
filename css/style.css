@@ -464,10 +464,28 @@ img {
 
 .footer__list {
   display: none;
+  font-size: 0.8em;
+}
+
+.footer__list-item {
+  border-right: solid 1px #fff;
+  display: inline-block;
+  margin: 0 0.25em;
+}
+
+.footer__list-item:last-child {
+  border-right: none;
+}
+
+.footer__list-link {
+  color: #fff;
+  padding-right: 8px;
+  text-decoration: none;
 }
 
 .footer__img {
-  width: 20%;
+  width: 15%;
+  height: auto;
   margin: 1em 0;
 }
 
@@ -586,6 +604,13 @@ img {
 
   .section__link {
     text-align: left;
+  }
+
+  .footer__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
