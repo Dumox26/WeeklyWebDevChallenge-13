@@ -32,6 +32,7 @@ img {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  height: auto;
 }
 
 .hmb-btn__outer {
@@ -87,11 +88,8 @@ img {
 /* header */
 
 .header {
-  background-image: url(../images/Rectangle1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 2em;
+  background-color: #02c6d8;
+  padding: 2vh;
 }
 
 .header__logo {
@@ -99,44 +97,49 @@ img {
   height: 60px;
 }
 
-.header__nav-cnt {
+/* header__list style animation */
+
+.header__nav {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   width: 100%;
-  height: 70px;
+  min-height: 8vh;
   margin-bottom: 2em;
   position: relative;
 }
 
-/* header__list style animation */
-
-.header__nav {
-  margin-left: auto;
-}
-
 .header__navigation {
   position: absolute;
+  left: 0;
   top: 0;
-  left: 50%;
-  transform: translateY(-450px) translateX(-50%);
-  transition: all 0.5s ease-in-out;
-  width: 250px;
-}
-
-.header__list {
-  font-size: 2em;
+  background-color: #03bdce;
+  transform: translateX(-150%);
+  transition: transform 0.6s ease-in-out;
+  margin-top: 10vh;
+  width: 100%;
+  max-height: 90vh;
+  padding-bottom: 1em;
 }
 
 .header__navigation--active {
-  transform: translateY(90px) translateX(-50%);
-  z-index: 10;
+  z-index: 99999;
   border-top: 1px solid #fff;
-  height: 300px;
+  transform: translateX(0);
+}
+
+.header__list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2em;
 }
 
 .header__item {
   margin-top: 0.25em;
   text-align: center;
+  opacity: 0;
 }
 
 .header__link {
@@ -144,14 +147,21 @@ img {
   color: #fff;
 }
 
+@keyframes linksFadeAnimation {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .header__welcome-txt {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  transition: all 0.5s ease-in-out;
-}
-
-.header__welcome-txt--menu-active {
-  margin-top: 370px;
 }
 
 .header__text {

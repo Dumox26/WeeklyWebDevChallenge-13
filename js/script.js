@@ -6,14 +6,21 @@ class Ui {
 
   handleHmbClick = (e) => {
     document.querySelector('#nav-btn').classList.toggle('hmb-btn--active')
-    this.menuEvent();
+    this.menuSlideIn();
   }
 
-  menuEvent = () => {
+  menuSlideIn = () => {
     document.querySelector('#header-menu').classList.toggle('header__navigation--active');
-    document.querySelector('#header-text').classList.toggle('header__welcome-txt--menu-active');
-  }
+    const menuLinks = document.querySelectorAll('.header__item');
 
+    menuLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `linksFadeAnimation 0.5s ease forwards ${index / 5 + 0.5}s`;
+      }
+    });
+  }
 
   eventlisteners = () => {
     document.querySelector('#nav-btn').addEventListener('click', (event) => {
