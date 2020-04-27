@@ -4,9 +4,14 @@ class Ui {
     this.matchMedia();
   }
 
-  handleHmbClick = (e) => {
-    document.querySelector('#nav-btn').classList.toggle('hmb-btn--active')
+  handleTopHmbClick = (e) => {
+    document.querySelector('#nav-btn').classList.toggle('hmb-btn--active');
     this.menuSlideIn();
+  }
+
+  handleBotttomHmbClick = (e) => {
+    document.querySelector('#footer-btn').classList.toggle('hmb-btn--active');
+    this.footerMenuSlideIn();
   }
 
   menuSlideIn = () => {
@@ -22,9 +27,17 @@ class Ui {
     });
   }
 
+  footerMenuSlideIn = () => {
+    document.querySelector('#footer-nav-list').classList.toggle('footer__list--active');
+  }
+
   eventlisteners = () => {
     document.querySelector('#nav-btn').addEventListener('click', (event) => {
-      this.handleHmbClick(event);
+      this.handleTopHmbClick(event);
+    }, false);
+
+    document.querySelector('#footer-btn').addEventListener('click', (event) => {
+      this.handleBotttomHmbClick(event);
     }, false);
   }
 
