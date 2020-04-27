@@ -219,7 +219,7 @@ img {
 .section-contact,
 .section-work,
 .footer {
-  padding: 2em;
+  padding: 0.5em;
 }
 
 .section {
@@ -291,7 +291,6 @@ img {
 .section-contact {
   background-color: #9068be;
   color: #ffff;
-  padding: 2em;
 }
 
 .section-contact__text,
@@ -447,7 +446,6 @@ img {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 2em;
   color: #fff;
 }
 
