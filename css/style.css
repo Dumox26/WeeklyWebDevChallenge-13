@@ -130,6 +130,7 @@ img {
   max-height: 110vh;
   opacity: 1;
   margin-top: 0;
+  pointer-events: auto;
 }
 
 .header__list {
@@ -499,6 +500,7 @@ img {
   max-height: 110vh;
   opacity: 1;
   border-top: 1px solid #fff;
+  pointer-events: auto;
 }
 
 .footer__list-item {
