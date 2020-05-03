@@ -121,6 +121,7 @@ img {
   align-self: flex-end;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .header__navigation--active {
@@ -131,6 +132,7 @@ img {
   opacity: 1;
   margin-top: 0;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .header__list {
@@ -492,6 +494,7 @@ img {
   bottom: 0;
   transition: height 0.5s ease-in-out, opacity 0.5s 0s ease-in-out;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .footer__list--active {
@@ -501,6 +504,7 @@ img {
   opacity: 1;
   border-top: 1px solid #fff;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .footer__list-item {
@@ -537,17 +541,13 @@ img {
   display: inline-block;
 }
 
-@media screen and (min-width: 820px) {
-  .header__welcome-txt--menu-active {
-    margin-top: 400px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .section__image-woman {
-    display: block;
-    grid-column: 2/8;
-    margin: 1em 0;
+@media screen and (min-width: 768px) {
+  .header,
+  .section,
+  .section-contact,
+  .section-work,
+  .footer {
+    padding: 2em;
   }
 
   .section-contact__form {
@@ -559,9 +559,18 @@ img {
     margin: 0 0.5em 1em 0.5em;
     font-size: 1em;
   }
+
+  .section__image-woman-cnt {
+    display: block;
+    grid-column: 2/8;
+  }
+
+  .footer__socials-list {
+    width: 25%;
+  }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .header {
     padding: 0.5em 2em 0 2em;
   }
