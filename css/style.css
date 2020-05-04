@@ -195,7 +195,7 @@ img {
   margin: 1em 0 2em 0;
 }
 
-.header__image-cnt {
+.header__image {
   display: none;
 }
 
@@ -246,7 +246,7 @@ img {
   grid-column: 1/9;
 }
 
-.section__image-woman-cnt {
+.section__image-woman {
   display: none;
 }
 
@@ -560,9 +560,13 @@ img {
     font-size: 1em;
   }
 
-  .section__image-woman-cnt {
+  .section__image-woman {
     display: block;
-    grid-column: 2/8;
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    grid-column: 1/9;
+    justify-self: center;
   }
 
   .footer__socials-list {
@@ -572,7 +576,7 @@ img {
 
 @media screen and (min-width: 1024px) {
   .header {
-    padding: 0.5em 2em 0 2em;
+    padding-bottom: 0;
   }
 
   .header__nav {
@@ -619,36 +623,31 @@ img {
     padding: 0.5em;
   }
 
-  .header__image-cnt {
+  .header__image {
     display: block;
     grid-column: 5/9;
     height: auto;
-  }
-
-  .header__image,
-  .section__image-woman-cnt {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    max-height: 600px;
     width: 100%;
+    max-width: 620px;
+    vertical-align: bottom;
+    align-self: end;
+    justify-self: end;
   }
 
-  .section__image-woman-cnt {
-    grid-column: 1/9;
+  .section__image-woman {
+    grid-column: 1/4;
   }
 
   .section__describe {
-    grid-column: 2/8;
+    grid-column: 4/9;
+    height: 90%;
     padding: 2em;
+    align-self: center;
+    text-align: left;
   }
 
   .section__text {
     margin-bottom: 2em;
-  }
-
-  .section__link {
-    text-align: left;
   }
 
   .footer__list {
