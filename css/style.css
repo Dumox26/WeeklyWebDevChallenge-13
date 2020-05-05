@@ -150,7 +150,6 @@ img {
 }
 
 .header__link {
-  font-size: 0.5em;
   color: #fff;
 }
 
@@ -480,6 +479,10 @@ img {
   position: relative;
 }
 
+.footer__nav {
+  height: auto;
+}
+
 .footer__list {
   font-size: 1em;
   margin: 1em 0;
@@ -518,8 +521,9 @@ img {
 
 .footer__img {
   width: 20%;
+  max-width: 140px;
   height: auto;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .footer__socials-list {
@@ -547,7 +551,7 @@ img {
   .section-contact,
   .section-work,
   .footer {
-    padding: 2em;
+    padding: 1em;
   }
 
   .section-contact__form {
@@ -575,33 +579,46 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  .grid--nine_column {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
   .header {
-    padding-bottom: 0;
+    padding: 0.5em 1em 0 1em;
   }
 
   .header__nav {
     margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
   }
 
   .header__navigation {
+    display: flex;
     border: none;
     position: static;
-    transform: translateY(0) translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    cursor: pointer;
     transition: none;
-    width: auto;
-    font-size: 1em;
+    margin-top: 0;
+    height: auto;
+    align-self: stretch;
+    padding: 0;
   }
 
   .header__list {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
-    font-size: 1.25em;
-    padding-top: 0.5em;
+    justify-content: space-evenly;
+    font-size: 0.75em;
+    width: 100%;
   }
 
   .header__item {
-    margin: 0 1em;
+    padding-top: 0.5em;
+    opacity: 1;
   }
 
   .hmb-btn {
@@ -650,11 +667,32 @@ img {
     margin-bottom: 2em;
   }
 
+  .offert-card-cnt {
+    grid-column: span 4;
+    margin: 0 15px 0 15px;
+  }
+
+  .section__welcome-text--nine-column {
+    grid-column: 1/10;
+  }
+
+  .client-card-cnt {
+    grid-column: span 3;
+    margin-right: 15px;
+  }
+
   .footer__list {
     display: flex;
-    flex-flow: row wrap;
+    position: static;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+    pointer-events: auto;
+    cursor: pointer;
+    font-size: 0.75em;
   }
 
   .footer__list-item {
@@ -670,16 +708,20 @@ img {
   .footer__list-item:last-child {
     border-right: none;
   }
+
+  .footer__img {
+    margin-top: 1em;
+  }
+
+  .footer__socials-list {
+    width: 10%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1100px;
     margin: 0 auto;
-  }
-
-  .grid--nine_column {
-    grid-template-columns: repeat(9, 1fr);
   }
 
   .section__image-woman-cnt {
@@ -715,10 +757,6 @@ img {
   .offert-card-cnt {
     grid-column: span 4;
     margin: 0 15px 0 15px;
-  }
-
-  .section__welcome-text--nine-column {
-    grid-column: 1/10;
   }
 
   .client-card-cnt {
