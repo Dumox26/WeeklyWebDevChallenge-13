@@ -1,7 +1,6 @@
 class Ui {
   constructor() {
     this.eventlisteners();
-    this.matchMedia();
   }
 
   handleTopHmbClick = (e) => {
@@ -48,19 +47,6 @@ class Ui {
     document.querySelector('#footer-btn').addEventListener('click', (event) => {
       this.handleBotttomHmbClick(event);
     }, false);
-  }
-
-  matchMedia = () => {
-    const media = window.matchMedia('(min-width: 1000px)');
-    const headerText = document.querySelector('#header-text');
-    const headerNav = document.querySelector('#header-menu');
-
-    media.addEventListener('change', (event) => {
-      if (event.matches) {
-        headerText.classList.remove('header__welcome-txt--menu-active');
-        headerNav.classList.remove('header__navigation--active');
-      }
-    });
   }
 }
 
