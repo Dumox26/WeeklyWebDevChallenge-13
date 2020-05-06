@@ -15,20 +15,29 @@ class Ui {
   }
 
   menuSlideIn = () => {
-    document.querySelector('#header-menu').classList.toggle('header__navigation--active');
-    const menuLinks = document.querySelectorAll('.header__item');
+    const headerMenu = document.querySelector('#header-menu');
+    headerMenu.classList.toggle('header__navigation--active');
 
-    menuLinks.forEach((link, index) => {
+    const topMenulinks = document.querySelectorAll('.header__item');
+    this.menuLinksAnimation(topMenulinks);
+  }
+
+  footerMenuSlideIn = () => {
+    const footerMenu = document.querySelector('#footer-nav-list');
+    footerMenu.classList.toggle('footer__list--active');
+
+    const botttomMenuLinks = document.querySelectorAll('.footer__list-item');
+    this.menuLinksAnimation(botttomMenuLinks);
+  }
+
+  menuLinksAnimation = (links) => {
+    links.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
       } else {
         link.style.animation = `linksFadeAnimation 0.5s ease forwards ${index / 5 + 0.5}s`;
       }
     });
-  }
-
-  footerMenuSlideIn = () => {
-    document.querySelector('#footer-nav-list').classList.toggle('footer__list--active');
   }
 
   eventlisteners = () => {

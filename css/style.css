@@ -140,7 +140,7 @@ img {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 2em;
+  font-size: 1em;
   height: 100%;
 }
 
@@ -516,6 +516,7 @@ img {
 
 .footer__list-item {
   margin-bottom: 0.5em;
+  opacity: 0;
 }
 
 .footer__list-link {
