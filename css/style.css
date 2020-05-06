@@ -465,8 +465,12 @@ img {
   font-size: 1.5em;
   padding: 0.25em 0.5em;
   margin-bottom: 1em;
-  color: rgb(163, 163, 163);
+  color: #fff;
   display: inline-block;
+}
+
+.section-work__link:visited {
+  color: #fff;
 }
 
 /* footer */
@@ -600,7 +604,6 @@ img {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    cursor: pointer;
     transition: none;
     margin-top: 0;
     height: auto;
@@ -617,8 +620,16 @@ img {
   }
 
   .header__item {
-    padding-top: 0.5em;
     opacity: 1;
+    cursor: pointer;
+  }
+
+  .header__link {
+    padding: 15px;
+  }
+
+  .header__link:hover {
+    color: #ccc;
   }
 
   .hmb-btn {
@@ -638,6 +649,10 @@ img {
   .header__btn {
     font-size: 1.5em;
     padding: 0.5em;
+  }
+
+  .header__btn:hover {
+    background-color: #7e5aa7;
   }
 
   .header__image {
@@ -667,9 +682,23 @@ img {
     margin-bottom: 2em;
   }
 
+  .section-contact__btn {
+    cursor: pointer;
+  }
+
+  .section-contact__btn:hover,
+  .offert-card__link--orange:hover,
+  .section-work__link:hover {
+    background-color: #c56140;
+  }
+
   .offert-card-cnt {
     grid-column: span 4;
     margin: 0 15px 0 15px;
+  }
+
+  .offert-card__link--green:hover {
+    background-color: #3d858d;
   }
 
   .section__welcome-text--nine-column {
@@ -691,7 +720,6 @@ img {
     visibility: visible;
     transition: none;
     pointer-events: auto;
-    cursor: pointer;
     font-size: 0.75em;
   }
 
@@ -699,6 +727,7 @@ img {
     border-right: solid 1px #fff;
     display: inline-block;
     margin: 0 0.25em;
+    cursor: pointer;
   }
 
   .footer__list-link {
@@ -724,9 +753,9 @@ img {
     margin: 0 auto;
   }
 
-  .section__image-woman-cnt {
-    grid-column: 1/4;
-    min-height: 350px;
+  .header__list {
+    width: 70%;
+    margin-left: auto;
   }
 
   .section__describe {
