@@ -4,18 +4,25 @@ class Ui {
   }
 
   handleTopHmbClick = (e) => {
-    document.querySelector('#nav-btn').classList.toggle('hmb-btn--active');
+    const topNavBtn = document.querySelector('#nav-btn');
+    topNavBtn.classList.toggle('hmb-btn--active');
+    this.setAriaExpand(topNavBtn);
+
     this.menuSlideIn();
   }
 
   handleBotttomHmbClick = (e) => {
-    document.querySelector('#footer-btn').classList.toggle('hmb-btn--active');
+    const botNavBtn = document.querySelector('#footer-btn');
+    botNavBtn.classList.toggle('hmb-btn--active');
+    this.setAriaExpand(botNavBtn);
+
     this.footerMenuSlideIn();
   }
 
   menuSlideIn = () => {
     const headerMenu = document.querySelector('#header-menu');
     headerMenu.classList.toggle('header__navigation--active');
+    this.setAriaExpand(headerMenu);
 
     const topMenulinks = document.querySelectorAll('.header__item');
     this.menuLinksAnimation(topMenulinks);
@@ -24,9 +31,18 @@ class Ui {
   footerMenuSlideIn = () => {
     const footerMenu = document.querySelector('#footer-nav-list');
     footerMenu.classList.toggle('footer__list--active');
+    this.setAriaExpand(footerMenu);
 
     const botttomMenuLinks = document.querySelectorAll('.footer__list-item');
     this.menuLinksAnimation(botttomMenuLinks);
+  }
+
+  setAriaExpand = (elem) => {
+    if (elem.getAttribute('aria-expanded') === 'false') {
+      elem.setAttribute('aria-expanded', 'true');
+    } else {
+      elem.setAttribute('aria-expanded', 'false');
+    }
   }
 
   menuLinksAnimation = (links) => {

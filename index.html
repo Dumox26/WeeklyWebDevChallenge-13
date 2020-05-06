@@ -15,7 +15,7 @@
     <div class="container">
       <nav class="header__nav">
         <img class="header__logo" src="images/logo.png" alt="page logo">
-        <button id="nav-btn" class="hmb-btn">
+        <button id="nav-btn" class="hmb-btn" aria-expanded="false">
           <span class="hmb-btn__outer">
             <span class="hmb-btn__inner"></span>
           </span>
@@ -116,9 +116,10 @@
       </div>
       <form class="section-contact__form">
         <label class="section-contact__label" for="input-name"></label>
-        <input class="section-contact__input" type="text" id="input-name" required placeholder="Enter your full name">
+        <input class="section-contact__input" type="text" id="input-name" required aria-required="true"
+          placeholder="Enter your full name">
         <label class="section-contact__label" for="input-email"></label>
-        <input class="section-contact__input" type="email" id="input-email" required
+        <input class="section-contact__input" type="email" id="input-email" required aria-required="true"
           placeholder="Enter your email adress">
         <button type="submit" class="section-contact__btn">Get it Now!</button>
       </form>
